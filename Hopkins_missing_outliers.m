@@ -37,7 +37,7 @@ for i = 9:length(file)
 				indX(:,2*jj) = m(:,jj);
 			end
 			idx_all0 = [];
-			for kk=1:2*F
+			for kk=1:N
 				if(isequal(indX(kk,:),zeros(1,2*F)))
 					idx_all0 = [idx_all0,kk];
 				end
