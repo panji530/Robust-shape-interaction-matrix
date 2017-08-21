@@ -25,7 +25,7 @@ for ii = 1:length(r)
 		
 	W = real(Z.^3.5); % enhance block-diagonal structure; 
 	                  %	On hopkins155, average err = 0.79% with powering value gamma = 3.8.
-					  % You can also try other powering values in [3,4].
+					  % You can also try other powering values in [3,5].
 					 	
 	Aff{ii} = W;
 	[clusterLabel{ii},~,~] = ncutW(W,K); % install your ncutW function 
