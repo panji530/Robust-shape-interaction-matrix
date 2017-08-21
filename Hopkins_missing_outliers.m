@@ -7,7 +7,7 @@ clear; close all
 
 file = dir;
 ii = 0;
-for i = 9:length(file)
+for i = 1:length(file)
 	if( (file(i).isdir == 1) && ~strcmp(file(i).name,'.') && ~strcmp(file(i).name,'..') )
 		filepath = file(i).name;
 		eval(['cd ' filepath]);
